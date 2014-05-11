@@ -137,14 +137,14 @@ void scan_os(gboolean reload)
 void scan_modules(gboolean reload)
 {
     SCAN_START();
-    scan_modules_do();
+//    scan_modules_do();
     SCAN_END();
 }
 
 void scan_boots(gboolean reload)
 {
     SCAN_START();
-    scan_boots_real();
+//    scan_boots_real();
     SCAN_END();
 }
 
@@ -152,14 +152,14 @@ void scan_locales(gboolean reload)
 {
     SCAN_START();
     scan_os(FALSE);
-    scan_languages(computer->os);
+//    scan_languages(computer->os);
     SCAN_END();
 }
 
 void scan_fs(gboolean reload)
 {
     SCAN_START();
-    scan_filesystems();
+//    scan_filesystems();
     SCAN_END();
 }
 
@@ -173,14 +173,14 @@ void scan_display(gboolean reload)
 void scan_users(gboolean reload)
 {
     SCAN_START();
-    scan_users_do();
+//    scan_users_do();
     SCAN_END();
 }
 
 void scan_groups(gboolean reload)
 {
     SCAN_START();
-    scan_groups_do();
+//    scan_groups_do();
     SCAN_END();
 }
 
